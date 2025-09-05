@@ -1,0 +1,84 @@
+/* Apply styles to the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table headers */
+th {
+    background: #18bc9c;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Table rows */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hover effect */
+tr:hover {
+    background: #d3e3fd;
+    transition: 0.3s;
+}
+
+/* Status colors */
+td:nth-child(3) {
+    font-weight: bold;
+}
+
+/* Different colors for different statuses */
+td:nth-child(3):contains("Accepted") {
+    color: green;
+}
+
+td:nth-child(3):contains("Rejected") {
+    color: red;
+}
+
+td:nth-child(3):contains("Pending") {
+    color: orange;
+}
+
+/* Add some spacing to the link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #0056b3;
+}
